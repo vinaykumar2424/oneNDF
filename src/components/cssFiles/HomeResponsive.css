@@ -1,0 +1,99 @@
+@media screen and (min-width:1024px) {
+    .calculation-part .set-value {
+        width: 70%;
+    }
+    .show-result {
+        width: 30%;
+    }
+    .emi-value {
+        width: calc(70% - 4rem);
+    }
+}
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .calculation-part .set-value {
+        width: 60%;
+    }
+    .show-result {
+        width: 40%;
+    }
+    .emi-value {
+        width: calc(60% - 4rem);
+    }
+    .show-result .recharts-wrapper {
+        margin-top: 2rem;
+    }
+    .calculation-part .set-value {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (min-width:650px) and (max-width:767px)  {
+    .home {
+        width: calc(100% - 2rem);
+        padding: 0 1rem;
+    }
+    .calculation-part .set-value {
+        width: 55%;
+    }
+    .show-result {
+        width: 45%;
+    }
+    .emi-value {
+        width: calc(55% - 4rem);
+    }
+    .show-result .recharts-wrapper {
+        margin-top: 2rem;
+    }
+    .calculation-part .set-value {
+        margin-top: 2rem;
+    }
+}
+@media screen and (max-width:650px){
+    .home {
+        width: calc(100% - 0.5rem);
+        padding: 0 0.25rem;
+    }
+    .calculation-part {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+    }
+    .calculation-part .set-value {
+        width: 100%;
+        border: none;
+        margin-top: 3rem;
+    }
+    .show-result {
+        width: 100%;
+    }
+    .emi-value {
+        margin-top: 2rem;
+        width: calc(100% - 2rem);
+        padding: 0 1rem;
+    }
+    .type-of-loans {
+        padding:0 1rem;
+    }
+    .type-of-loans .loan {
+        font-size: 0.8rem;
+    }
+    .heading {
+        font-size: 1.5rem;
+        font-weight: 600;
+        width: 100%;
+        text-align: left;
+        padding: 3rem 1.25rem 0 1.25rem;
+    }
+    .calculation-part .set-value .loan-detail {
+        width: calc(100% - 2rem);
+        padding: 1.2rem 1rem;
+    }
+    .show-result .recharts-wrapper {
+        margin-top: 2rem;
+    }
+    .take-loans-options {
+        width: calc(100% - 2rem);
+        padding: 0 1rem;
+    }
+}

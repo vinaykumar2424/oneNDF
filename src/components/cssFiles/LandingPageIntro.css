@@ -1,0 +1,110 @@
+.landingpageintro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 5rem 0;
+}
+
+.landingpageintro .name {
+    font-size: 5rem;
+}
+
+.landingpageintro .details {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.3rem;
+    width: 18rem;
+}
+
+.landingpageintro .details span {
+    font-size: 1.3rem;
+    position: relative;
+}
+
+.landingpageintro .details .variable-text {
+    color: #fc8403;
+    font-weight: 600;
+}
+
+.landingpageintro .details .variable-text::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    animation: textHide 4s ease-out infinite;
+    animation-delay: 2s;
+}
+
+@keyframes textHide {
+
+    0%,
+    100% {
+        width: 0%;
+    }
+
+    50% {
+        width: 100%;
+    }
+}
+
+.bottomPart-heading {
+    margin-top: 10rem;
+    font-size: 2rem;
+    font-weight: 600;
+    width: 90%;
+    text-align: center;
+}
+
+.bottomPart-cards {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 4rem;
+    gap: 2rem;
+
+}
+
+.bottomPart-cards .card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 15px 20px;
+    width: calc(30% - 40px);
+    height: 14rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.bottomPart-cards .card p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: left;
+    color: #fc8403;
+}
+
+.bottomPart-cards .card p span {
+    font-size: 2rem;
+}
+
+.bottomPart-cards .card div {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    text-align: left;
+    overflow: hidden;
+}

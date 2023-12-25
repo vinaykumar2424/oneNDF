@@ -1,23 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import LandingPage from './components/jsFiles/LandingPage';
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import Home from './components/jsFiles/Home';
+import RegistrationForm from './components/jsFiles/RegistrationForm/RegistrationForm';
+import LoginForm from './components/jsFiles/RegistrationForm/LoginForm';
+import { AuthContext } from './components/jsFiles/firebase/AuthContext';
+import { useContext } from 'react';
 
 function App() {
+
+  const { currentUser } = useContext(AuthContext);
+
+  const ProtectedRoute = ({ children }) => {
+    if (!currentUser) {
+      return <Navigate to="/login" />
+    }
+    return children;
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        {/* <LandingPage /> */}
+        <Routes>
+          <Route>
+            <Route path="/" element={<LandingPage />} />
+            <Route path='/home' element={<ProtectedRoute><Home /></ProtectedRoute>} />
+            <Route path="register" element={<RegistrationForm />} />
+            <Route path="login" element={<LoginForm />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

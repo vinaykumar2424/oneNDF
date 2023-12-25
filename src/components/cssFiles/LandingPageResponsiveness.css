@@ -1,0 +1,77 @@
+@media screen and (min-width:601px) and (max-width:769px) {
+    .login-register-span {
+        padding: 2rem 1rem !important;
+        font-size: 1.1rem !important;
+    }
+    .login-register-span .login-register span {
+        font-size: 2rem !important;
+    }
+    .login-register-span a {
+        position: relative;
+        left: -0.5rem !important;
+        top: -0.5rem !important;
+        transform: rotate(-25deg) !important;
+        color: #fffff1;
+    }
+    .nav-item-span a {
+        padding: 1rem 1.5rem !important;
+        font-size: 1.3rem;
+        transition: 0.5s;
+        position: relative;
+    }
+}
+@media screen and (max-width:600px) {
+    .login-register-span {
+        padding: 1rem 2rem !important;
+        font-size: 1.1rem !important;
+    }
+    .login-register-span .login-register span {
+        font-size: 2rem !important;
+    }
+    .login-register-span a {
+        position: relative;
+        left: -0.5rem !important;
+        top: -0.5rem !important;
+        transform: rotate(-10deg) !important;
+        color: #fffff1;
+    }
+    .nav-item-span {
+        display: none !important;
+    }
+    .bottomPart-cards {
+        width: 90%;
+        display: flex;
+        justify-content: flex-start !important;
+        align-items: center !important;
+        flex-direction: column;
+        margin-top: 4rem;
+        gap: 2rem;
+    }
+    .bottomPart-cards .card {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 15px 20px;
+        width: calc(100% - 40px) !important;
+        height: 12rem !important;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        background: rgba(255, 255, 255, 0.25);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+    .landingpageintro .name {
+        font-size: 4rem !important;
+    }
+    .landingpageintro .details {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 1rem !important;
+        width: 17rem !important;
+    }
+}

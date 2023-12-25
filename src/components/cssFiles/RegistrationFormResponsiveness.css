@@ -1,0 +1,287 @@
+@media screen and (min-width:1024px) {
+    form {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: relative;
+        flex-wrap: wrap;
+        padding: 5vh 5rem;
+        width: calc(100% - 10rem);
+        height: auto;
+        align-content: flex-start
+    }
+    
+    .form-login{
+        width: calc(50% - 10rem);
+    }
+
+    .right-part{
+        display: flex;
+        width: 50%;
+        height: 100%;
+        background-color: #fc8403;
+        overflow: hidden;
+        position: relative;
+    }
+    .right-part img:nth-child(1){
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        object-fit: contain;
+    }
+    .right-part img:nth-child(2){
+        width: 20%;
+        position: absolute;
+        top: 5%;
+        right: 10%;
+        object-fit: contain;
+    }
+    .right-part div{
+        width: 80%;
+        position: absolute;
+        top: 22%;
+        right: 5%;
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        font-weight: 600;
+        color: #fffff1;
+    }
+    .right-part div span{
+        text-align: left;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1023px) {
+    form {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: relative;
+        flex-wrap: wrap;
+        padding: 5vh 2rem;
+        width: calc(100% - 4rem);
+        height: auto;
+        align-content: flex-start
+    }
+    
+    .form-login{
+        width: calc(50% - 4rem) !important;
+    }
+
+    .right-part{
+        display: flex;
+        width: 50%;
+        height: 100%;
+        background-color: #fc8403;
+        overflow: hidden;
+        position: relative;
+    }
+    .right-part img:nth-child(1){
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        object-fit: contain;
+    }
+    .right-part img:nth-child(2){
+        width: 25%;
+        position: absolute;
+        top: 5%;
+        right: 10%;
+        object-fit: contain;
+    }
+    .right-part div{
+        width: 80%;
+        position: absolute;
+        top: 22%;
+        right: 5%;
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        font-weight: 600;
+        color: #fffff1;
+    }
+    .right-part div span{
+        text-align: left;
+    }
+    .inputBox span {
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 10px;
+        pointer-events: none;
+        font-size: 0.8rem;
+        color: rgba(0, 0, 0, 0.30);
+        text-transform: uppercase;
+        
+    }
+    form .inputBox:nth-child(4) {
+        width: 45%;
+    }
+    
+    form .inputBox:nth-child(5) {
+        width: 53%;
+        margin-left: 2%;
+    }
+    
+    form .inputBox:nth-child(6) {
+        width: 50%;
+        margin-left: 0;
+    }
+    form .inputBox:nth-child(7) {
+        width: 48%;
+        margin-left: 2%;
+    }
+    .password{
+        margin-left: 0% !important;
+    }
+    form .inputBox:nth-child(8) {
+        width: 100%;
+        margin-left: 0%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    form .inputBox:nth-child(8) select {
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width:767px)  {
+    form {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: relative;
+        flex-wrap: wrap;
+        padding: 5vh 2rem;
+        width: calc(100% - 4rem);
+        height: auto;
+        align-content: flex-start;
+        z-index: 2;
+    }
+    
+    .form-login{
+        padding: 5vh 2rem;
+        width: calc(100% - 4rem);
+    }
+
+    .right-part{
+        position: absolute !important;
+        top: 0;
+        left: 0;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+    }
+    .right-part img:nth-child(1){
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        object-fit: contain;
+        display: none;
+    }
+    .right-part img:nth-child(2){
+        width: 25%;
+        position: absolute;
+        top: 5%;
+        right: 10%;
+        object-fit: contain;
+    }
+    .right-part div{
+        display: none !important;
+        width: calc(100% - 30px);
+        position: absolute;
+        top: 30%;
+        right: 0%;
+        font-size: 1.2rem;
+        padding: 0 10px 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        font-weight: 600;
+        color: #fffff1;
+    }
+    .password{
+        margin-left: 0% !important;
+    }
+    .right-part div span{
+        text-align: left;
+    }
+    .inputBox span {
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 10px;
+        pointer-events: none;
+        font-size: 0.8rem;
+        color: rgba(0, 0, 0, 0.30);
+        text-transform: uppercase;
+        
+    }
+    form .inputBox:nth-child(4) {
+        width: 45%;
+    }
+    
+    form .inputBox:nth-child(5) {
+        width: 53%;
+        margin-left: 2%;
+    }
+    
+    form .inputBox:nth-child(6) {
+        width: 50%;
+        margin-left: 0;
+    }
+    form .inputBox:nth-child(7) {
+        margin-left: 2%;
+        width: 48%;
+    }
+    
+    form .inputBox:nth-child(8) {
+        width: 100%;
+        margin-left: 0%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    form .inputBox:nth-child(8) select {
+        width: 100%;
+    }
+    .right-part img:nth-child(2) {
+        width: 15%;
+        position: absolute;
+        top: 2%;
+        right: 5%;
+        object-fit: contain;
+    }
+    
+}
+@media screen and (max-width:375px)  {
+    form {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: relative;
+        flex-wrap: wrap;
+        padding: 5vh 1rem;
+        width: calc(100% - 2rem);
+        height: auto;
+        align-content: flex-start;
+        z-index: 2;
+    }
+    
+    .form-login{
+        padding: 5vh 1rem;
+        width: calc(100% - 2rem);
+    }
+}
